@@ -76,7 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.229"
-        app:srcCompat="@drawable/data_black" />
+        app:srcCompat="@drawable/data_button_selector" />
 
     <ImageView
         android:id="@+id/settings_button"
@@ -88,5 +88,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.23"
-        app:srcCompat="@drawable/settings_black" />
+        app:srcCompat="@drawable/settings_button_selector" />
 </androidx.constraintlayout.widget.ConstraintLayout>
