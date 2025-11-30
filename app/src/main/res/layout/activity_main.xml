@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.774"
-        app:srcCompat="@drawable/clean_black" />
+        app:srcCompat="@drawable/clean_button_selector" />
 
     <ImageView
         android:id="@+id/feed_button"
@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.775"
-        app:srcCompat="@drawable/feed_black" />
+        app:srcCompat="@drawable/feed_button_selector" />
 
     <ImageView
         android:id="@+id/play_button"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.776"
-        app:srcCompat="@drawable/play_black" />
+        app:srcCompat="@drawable/play_button_selector" />
 
     <ImageView
         android:id="@+id/rest_button"
@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.771"
-        app:srcCompat="@drawable/rest_black" />
+        app:srcCompat="@drawable/rest_button_selector" />
 
     <ImageView
         android:id="@+id/data_button"
