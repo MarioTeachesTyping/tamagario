@@ -55,7 +55,7 @@ public class DataActivity extends AppCompatActivity {
         hygieneBar = findViewById(R.id.hygiene_bar);
         energyBar = findViewById(R.id.energy_bar);
         dataDescription = findViewById(R.id.data_description);
-        ImageView backButton = findViewById(R.id.back_button);
+        ImageView backButton = findViewById(R.id.back_button_data);
 
         // All stats are 0–100
         happinessBar.setMax(100);

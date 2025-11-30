@@ -8,4 +8,26 @@
     android:background="@drawable/tamagario_bg"
     tools:context=".SettingsActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/interactions_viewer"
+        android:layout_width="372dp"
+        android:layout_height="331dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <ImageView
+        android:id="@+id/back_button_settings"
+        android:layout_width="152dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        app:srcCompat="@drawable/back_button_selector" />
 </androidx.constraintlayout.widget.ConstraintLayout>
