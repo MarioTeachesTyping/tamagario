@@ -60,8 +60,10 @@
         android:id="@+id/data_description"
         android:layout_width="392dp"
         android:layout_height="220dp"
+        android:fontFamily="@font/minecraft"
         android:gravity="center_horizontal"
         android:text="TextView"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,6 +129,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086"
+        app:layout_constraintVertical_bias="0.092"
         app:srcCompat="@drawable/back_button_selector" />
 </androidx.constraintlayout.widget.ConstraintLayout>

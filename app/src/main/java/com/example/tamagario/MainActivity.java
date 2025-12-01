@@ -1,6 +1,7 @@
 package com.example.tamagario;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity
     private AppDatabase db;
     private Pet currentPet;
     private ImageView petImage;
+    private MediaPlayer perfectSound;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
 
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        perfectSound = MediaPlayer.create(this, R.raw.invincible_theme);
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -168,6 +172,13 @@ public class MainActivity extends AppCompatActivity
         if (isPetPerfect())
         {
             petImage.setImageResource(R.drawable.tamagario_perfect);
+
+            // Play sound only the FIRST time Mario becomes perfect
+            if (!perfectSound.isPlaying()) {
+                perfectSound.start();
+            }
+
+            return;
         }
         else
         {
